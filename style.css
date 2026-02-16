@@ -4,53 +4,102 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fffaf0;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 4em;
+    background: #fffaf0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 
+.logo {
+    font-size: 3rem;
+    color: #202d3a;
 }
-.navbar{
-    padding: 2em;
-    background:transparent;
-}
-h1 {
-    padding-left: 0.5em;
-    font-family: 'Playfair Display', sans-serif;
-    position: relative;
-    margin: 0;
-    font-size: 3em; 
-}
-h2{
-    font-size: 0.95em;
-    padding-right: 0.5em;
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
     font-family: 'Poppins', sans-serif;
 }
-.container{
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 0;
+
+.nav-links a {
+    text-decoration: none;
+    color: #202d3a;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s;
 }
-.texto-sobreposto{
-    position: absolute;
-    width: 85vw;
-    top: 35vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-    padding: 1em;
+
+.nav-links a:hover {
+    color: #4caf81;
+    transform: translateY(-2px);
+}
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    font-size: 3.5em; 
+    color: #202d3a;
+}
+h2{
+    font-size: 1em;
+    padding-right: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    transition: transform ease-in-out 0.2s;
 }
 p{
     border-radius: 0.5em;
     padding: 0.8em;
-    color: black;
-    width: 70vw;
+    color: #202d3a;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
 }
 a{
     color: black;
-    transition: transform ease-in-out 0.3s;
 }
 a:hover{
     text-decoration: none;
-    color: rgb(5, 65, 23);
+}
+h2:hover{
+    transform: scale(1.1);
+    color: black;
+}
+.container{
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+.texto-sobreposto{
+    margin-top: 35vh;
+    width: 60vw;
+    text-align: center;
+    background-color: #fffaf0;
+    border-radius: 1em;
+    padding:4em;
+}
+/* tela de login */
+.login-container {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+/* teste */
+.imagem-fundo {
+  height: 100vh; 
+  background-image: url('imagem.png');
+  background-size: cover; 
+  background-position: center;
+  
+}
+.texto-saude {
+    margin-top: 10vh;
+    width: 60vw;
+    text-align: center;
+    background-color: #fffaf0;
+    border-radius: 1em;
+    padding:4em;
 }
